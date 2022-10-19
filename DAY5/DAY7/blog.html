@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        #box1{
+        
+            display: grid;
+            grid-template-columns:repeat(3 ,1fr) ;
+            grid-template-rows:400px;
+            /* width: 70%; */
+            /* margin: auto; */
+            gap: 10px;
+            
+        }
+        /* #box1>div{
+            border: 1px solid red;
+        } */
+        img{
+            width:100%;
+        
+        }
+
+        @media all and (min-width:380px) and (max-width:700px){
+            #box1{
+            display: grid;
+            grid-template-columns:repeat(2 ,1fr) ;
+            grid-template-rows:400px 400px;
+            margin:auto;
+            gap: 10px;
+                
+            }
+        }
+
+        @media all and (min-width:50px) and (max-width:379px){
+            #box1{
+            display: grid;
+            grid-template-columns:repeat(1 ,1fr) ;
+            grid-template-rows:400px 400px 400px;
+            gap: 85px;
+            margin:auto;
+                
+            }
+        }
+            
+
+    </style>
+</head>
+<body>
+    <h1>OUR BLOG</h1>
+    <div id="box1">
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/2672/5778/articles/blog-01.jpg?v=1514488158">
+            <h3>Newyork ss 2018 streat style amina mislin</h3>
+            <p>By Sangam Ward on july 04 1900 </p>
+            <p>Duis ut velit gravida nibh bibendum commodo Sus- pendisse pellemtesque mattis augue id eusimold inter-dum et malesada fames </p>
+
+            
+
+        </div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/2672/5778/articles/blog-02.jpg?v=1514488127">
+            <h3>The white sneckers nearly every fashion girls own</h3>
+            <p>By Sangam Ward on july 04 1900 </p>
+            <p>Duis ut velit gravida nibh bibendum commodo Sus- pendisse pellemtesque mattis augue id eusimold inter-dum et malesada fames </p>
+
+
+
+        </div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/2672/5778/articles/blog-03.jpg?v=1514488076">
+            <h3>Newyork ss 2018 streat style amina mislin</h3>
+            <p>By Sangam Ward on july 04 1900 </p>
+            <p>Duis ut velit gravida nibh bibendum commodo Sus- pendisse pellemtesque mattis augue id eusimold inter-dum et malesada fames </p>
+
+
+
+        </div>
+
+
+    
+</body>
+</html>

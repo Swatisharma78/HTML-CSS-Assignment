@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+       #nvbar{
+           width:80%;
+           height:100px;
+           background:#1c2938;
+           margin:auto;
+           display:flex;
+           justify-content:space-between;
+        }
+        #nvbar > div{
+            /* border:1px solid red; */
+            width:30%;
+            height:100%;
+            padding:30px;
+            color:white;
+        } 
+        #nvbar >div:first-child{
+            
+            font-size:25px;
+            font-weight: bold;
+           
+        }
+        #nvbar >div:last-child{
+            display:flex;
+            justify-content: space-around;
+        }
+        select{
+            background-color: #1c2938;
+            color:white;
+            border:0px;
+            
+        }
+   </style>
+</head>
+<body>
+    <div id="nvbar">
+        <div>Megawidth</div>
+        <div>
+            <div>Home</div>
+            <div>About</div>
+            <div>Blog</div>
+            <div>
+                <select> 
+                    <option value="">Page</option>
+                    <option value="">Sangam</option>
+                    <option value="">Mini</option>
+
+
+
+                </select>
+
+                
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

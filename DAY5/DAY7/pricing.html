@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #top {
+            width:60%;
+            height:200px;
+            margin:auto;
+            /* border:1px solid red; */
+            /* display: flex; */
+        }
+       
+        #top > h1 {
+            /* padding: 0% 10%; */
+            width: 55%;
+            margin:auto;
+            text-align: center;
+        }
+        #top>p{
+            width: 60%;
+            margin:auto;
+            text-align: center;
+        }
+        #bottom{
+            display: grid;
+            grid-template-columns:repeat(3 ,1fr) ;
+            grid-template-rows:320px;
+            /* width: 70%;
+            margin: auto; */
+            gap: 20px;
+            text-align: center;
+            
+            
+        }
+        #bottom>div{
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+            
+        }
+        p+p{
+            width:60%;
+            margin: auto;
+        }
+        button{
+            padding: 5px 14px;
+            border:1px solid blue;
+            font-size: 15px;
+            color: blue;
+            background:white;
+            border-radius: 5px ;
+            margin-top: 10px;
+        }
+        h3+h1{
+            color: blue;
+        }
+        #red{
+            color: crimson;
+        }
+        #sky{
+            color: dodgerblue;
+        }
+       #cl{
+            background: dodgerblue;
+            color: white;
+        }
+
+        @media all and (min-width:380px) and (max-width:700px){
+            #bottom{
+            display: grid;
+            grid-template-columns:repeat(2 ,1fr) ;
+            grid-template-rows:320px 320px;
+            gap: 50px;
+            text-align: center;
+            
+
+        }
+
+        @media all and (min-width:380px) and (max-width:700px){
+            #bottom{
+            display: grid;
+            grid-template-columns:repeat(1 ,1fr) ;
+            grid-template-rows:320px 320px 320px;
+            gap: 50px;
+            text-align: center;
+            
+
+        }
+       
+    </style>
+</head>
+<body>
+    <div id="top">
+        <h1>Choose a plan that right for your business</h1>
+        <p>we collect reviews from our users so you can get an honest opinion of what an experience with our website are really like</p>
+
+    </div>
+    <div id="bottom">
+        <div>
+            <h3>Starter Plan</h3>
+            <h1>Free</h1>
+            <p>Per Month</p>
+            <p>we collect reviews from our users so you can get an honest opinion of what an experience with our website</p>
+            <button>Start Now</button>
+        </div>
+        <div>
+            <h3>Businesses Plan</h3>
+            <h1 id="red">$39.00</h1>
+            <p>Per Month</p>
+            <p>we collect reviews from our users so you can get an honest opinion of what an experience with our website</p>
+            <button id="cl">Start Now</button>
+        </div>
+        <div>
+            <h3>Premium Plan</h3>
+            <h1 id="sky">$59.00</h1>
+            <p>Per Month</p>
+            <p>we collect reviews from our users so you can get an honest opinion of what an experience with our website</p>
+            <button>Start Now</button>
+        </div>
+    </div>
+
+
+  
+
+</body>
+</html>
